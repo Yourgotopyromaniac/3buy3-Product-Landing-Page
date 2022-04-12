@@ -1,0 +1,739 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-bar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.7;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(277, 38%, 16%);
+    color: white;
+}
+
+#icons
+{
+    position: relative;
+    left: 7em;
+    
+}
+i
+{
+    font-size: 1.5em;
+    padding: 1em;
+    opacity: 1;
+}
+
+#signout
+{
+    background-color: white;
+    color: hsl(277, 38%, 16%);
+    border-radius: 15px;
+    padding: 0.8em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border: none;
+    font-size: 15px;
+    opacity: 1;
+    font-weight: bold;
+}
+
+i:hover, #signout:hover
+{
+    cursor: pointer;
+}
+
+#nav-compinfo
+{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#nav-compinfo img
+{
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    opacity: 1;
+    
+}
+
+#nav-compinfo i
+{
+    display: none;
+}
+
+
+
+#nav-compinfo span
+{
+    font-size: 2em;
+    font-weight: 2000;
+    color: white;
+    opacity: 1;
+}
+#nav-links
+{
+    padding: 15px;
+    display: flex;
+    position: relative;
+    left: 7em;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#nav-links a
+{
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+    font-weight: lighter;
+
+}
+
+#nav-links a:hover
+{
+    text-decoration: underline;
+}
+
+#card
+{
+    background: hsl(277, 100%, 93%);
+    color: hsl(277, 38%, 16%);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 95vh;
+}
+
+#comp
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4em;
+    padding-right: 0em;
+    width: 50%;
+    position: relative;
+    left: 0;
+    order: 2;
+}
+
+#comp-about h1
+{
+    font-weight: 700;
+    color: hsl(277, 38%, 16%);
+}
+
+#comp-about p
+{
+    width: 80%;
+    text-transform: capitalize;
+    color : hsl(277, 38%, 16%);
+}
+.lower
+{
+    font-weight: 400;
+}
+
+#comp-stats
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div#comp-stats div
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 3em;    
+}
+
+div#comp-stats div p
+{
+    font-size: 13px;
+    color : hsl(277, 38%, 16%);
+    text-transform: capitalize;
+}
+
+
+div#comp-stats div h2
+{
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 2em;
+    color: hsl(277, 38%, 16%);
+}
+
+#bg-image 
+{
+    background-image: url(images/Rubik.png);
+    width: 50%;
+    position: relative;
+    background-size: cover;
+    order: 1;
+}
+
+#layer
+{
+    background-color: hsl(277, 100%, 93%);
+    height: 100%;
+    opacity: 0;
+    border-radius: inherit;
+}
+
+#subscribe
+{
+    height: 10%;
+    width: 100%;
+    position: relative;
+    top: 3em;
+    background: white;
+    color: hsl(277, 38%, 16%);
+
+}
+
+#form
+{
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: lighter;
+}
+
+#email
+{
+    margin-left: 70px;
+    width: 15%;
+    border:none;
+    padding: 1em;
+    color: black;
+    font-size: 15px;
+    border-bottom: 2px solid hsl(277, 38%, 16%);
+    padding-bottom: 0.5em;
+    outline: none;
+    text-transform: capitalize;
+}
+
+#submit
+{
+    background-color: hsl(277, 38%, 16%);
+    border-radius: 15px;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: white;
+    border: none;
+    margin-right: 80px;
+
+}
+
+#submit:hover
+{
+    cursor: pointer;
+    background-color: hsl(277, 100%, 93%);
+    color: hsl(277, 38%, 16%);
+    transition: 0.5s ease-in-out;
+}
+#topic
+{
+    text-align: center;
+    color: hsl(277, 38%, 16%);
+    text-decoration: underline;
+}
+#topic h3
+{
+    padding: 2em;
+}
+#sales
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2em;
+    position: relative;
+    top: 1em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sales-item
+{
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+    width: 10%;
+    background:white;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: hsl(277, 38%, 16%);
+    padding: 2em;
+}
+
+.sales-item:hover
+{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+.item-desc
+{
+    font-weight: lighter;
+    text-align: center;
+    height: 90px;
+    width: 100%;
+}
+
+.discount
+{
+    color: gray;
+    padding-right: 10px;
+}
+
+#prod1
+{
+    background: url(images/xman1.jpeg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100%;
+}
+#prod2
+{
+    background: url(images/peak.jpeg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100%;
+}
+
+#prod3
+{
+    background: url(images/RS3M2020.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100%;
+}
+
+#prod4
+{
+    background: url(images/gan12maglev.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100%;
+}
+
+#prod5
+{
+    background: url(images/ValkEliteM.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100%;
+}
+
+#prod6
+{
+    background: url(images/gan11mpro.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100%;
+}
+
+#prod7
+{
+    background: url(images/MoyuGTS3M.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100%;
+}
+
+#prod8
+{
+    background: url(images/xmantornadov2m.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100%;
+}
+
+#oos
+{
+    color: rgba(182, 182, 182, 0.6);
+}
+
+#more
+{
+    position: relative;
+    top: 3em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#more a
+{
+  padding: 2em;
+  font-size: 13px;
+  font-weight: normal;
+  padding-right: 6em;
+  color: hsl(277, 64%, 61%);  
+}
+
+#tutorials
+{
+    background-color: hsl(277, 38%, 16%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 5em;
+}
+
+.tutorial-vid
+{
+    position: relative;
+    width: 35%;
+    height: 260px;
+    margin: 2em;
+    border: 3px solid hsl(277, 100%, 93%);
+}
+
+#tuttext
+{
+    color: white;
+    padding: 1em;
+    text-align: left;
+}
+
+footer
+{
+    height: 30vh;
+    background-color: hsl(277, 100%, 93%);
+    color: hsl(277, 38%, 16%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer-other
+{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top : 2em;
+}
+.footer-links
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+#socials 
+{   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top : 2em;
+}
+
+
+#socials p
+{
+    position: relative;
+    right: 3em;
+    font-weight: normal;
+    
+}
+
+@media (max-width : 1024px)
+{
+    #signout
+    {
+        font-size: 2em;
+        padding: 1em;
+        margin: 1em;
+        margin-right: 0;
+    }
+
+    #nav-links
+    {
+        display: none;
+    }
+
+    #nav-compinfo span
+    {
+        font-size: 3.8em;
+        position: relative;
+        left: 1em;
+    }
+
+    #nav-compinfo img 
+    {
+        transform: scale(1.8);
+        padding: 2em;
+        position: relative;
+        left: 3em;
+    }
+
+    #nav-compinfo i
+    {
+         display: block;
+    }
+
+    i
+    {
+
+        transform: scale(1.5);
+    }
+
+    #card
+    {
+        background: hsl(277, 100%, 93%);
+        color: hsl(277, 38%, 16%);
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        position: relative;
+        height: 50vh;
+    }
+    
+    #comp
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 4em;
+        width: 100%;
+        padding-right: 0em;
+        position: relative;
+        left: 0;
+        order: 2;
+    }
+    #comp-about
+    {
+        font-size: 2em;
+    }
+    #comp-about h1
+    {
+        font-weight: 700;
+        color: hsl(277, 38%, 16%);
+    }
+    
+    #comp-about p
+    {
+        width: 80%;
+        text-transform: capitalize;
+        color : hsl(277, 38%, 16%);
+    }
+    .lower
+    {
+        font-weight: 400;
+    }
+    
+    #comp-stats
+    {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    div#comp-stats div
+    {
+        display: flex;
+        flex-direction: column;
+        margin-right: 3em;    
+    }
+    
+    div#comp-stats div p
+    {
+        font-size: x-large;
+        color : hsl(277, 38%, 16%);
+        text-transform: capitalize;
+    }
+    
+    
+    div#comp-stats div h2
+    {
+        font-size: 2em;
+        font-weight: 700;
+        margin-bottom: 0px;
+        margin-top: 2em;
+        color: hsl(277, 38%, 16%);
+    }
+    
+    #bg-image 
+    {
+        display: none;
+    }
+      
+    iframe
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    footer
+    {
+        height: 15vh;
+    }
+
+    .sales-item
+    {
+        padding: 8em;
+        margin: 3em;
+    }
+    .item-desc
+    {
+        font-size: 1.5em;
+    }
+    .item-desc p
+    {
+        width: 100%;
+    }
+    .item-desc h3
+    {
+        position: relative;
+        right: 15px;
+    }
+
+    #oos
+    {
+        position: relative;
+        bottom: 30px;
+        margin-top: 10px;
+    }
+
+    #topic h2 
+    {
+        font-size: 2.5em;
+    }
+    #more
+    {
+        position: relative;
+        top: 0;
+        justify-content: center;
+    }
+
+    #more a
+    {
+        text-align: center;
+        padding-right: 2em;
+        font-size: 1.5em;
+    }
+    #tutorials
+    {
+        height: 50vh;
+        flex-direction: column;
+    }
+
+    .tutorial-vid
+    {
+        width: 50%;
+    }
+
+    #subscribe
+    {
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #tuttext
+    {
+        font-size: 2em;
+    }
+
+    label
+    {
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    #form
+    {
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    #email
+    {
+        width: 50%;
+        font-size: 24px;
+        margin-left: 0;
+    }
+
+    #submit
+    {
+        position: relative;
+        top: 2em;
+        margin-right: 0;
+        font-size: 24px;
+        width: 50vw;
+    
+    }
+    .footer-links
+    {
+        font-size: 24px;
+    }
+
+    #socials p
+    {
+        font-size: 24px;
+        right: 0%;
+    }
+
+    
+}
+ 
